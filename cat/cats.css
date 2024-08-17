@@ -1,0 +1,95 @@
+.catimg {
+   width: 250px;  
+   background-size: cover;
+   background-position: center;
+}
+
+.mydiv {
+    display: inline-block;
+    width: 250px;
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+    font-size: 20px;
+    width: 100px;
+    margin-bottom: 1px;
+}
+
+.supercat {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 15px;
+    width: 130px;
+
+}
+
+.button1 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(255, 185, 239);
+}
+
+.button1:hover {
+    background-color: rgb(255, 202, 244);
+    transition-duration: 0.15s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#hiddenContent {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #c90000; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    color: #333; /* Dark text color for contrast */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    width: 175px;
+    color: aliceblue;
+}
+
+
+
+
+
+/* Base styles (for desktop) */
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .mydiv {
+        width: 350px; /* Make the container full width on mobile */
+        box-shadow:2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .catimg {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .name, .supercat {
+        width: auto; /* Allow text to use full width */
+        margin-left: 10px; /* Adjust margins */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .button1 {
+        width: 300px; /* Make button full width */
+        height: 45px; /* Increase height for easier tapping */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    #hiddenContent {
+        width: 160px;
+        margin-left: 70px;
+    }
+}

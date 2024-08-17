@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kocka_nikola</title>
+        <link rel="stylesheet" href="cats.css">
+    </head>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="cats.css">
+    </head>
+    
+    <body>
+
+        <div class="mydiv">
+            <img class="catimg" 
+            src="gingercat.webp" alt="A ginger cat">
+
+            <p class="name">
+               Nikola 
+            
+            </p>
+
+            <p class="supercat">
+                Super cat. Adopt now and you'll get 30% off.
+            </p>
+
+            <button id="myButton" class="button1">
+                Get her
+            </button>
+
+            <div class="button1" id="hiddenContent" style="display: none;">
+                NASRAT ZMRDE, JE DAVNO MATYSKOVA
+            </div>
+
+            <script>
+                document.getElementById("myButton").addEventListener("click", function() {
+                    var content = document.getElementById("hiddenContent");
+                    content.style.display = "block"; // Show the hidden content
+                });
+            </script>
+
+        </div>
+    </body>
+
+
+</html>
